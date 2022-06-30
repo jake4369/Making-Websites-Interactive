@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Stempel Garamond Bold", serif;
+  src: url("StempelGaramondBold.ttf") format("truetype");
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.container {
+  padding: 2em;
+}
+
+img {
+  width: 60%;
+}
+
+.player-name {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  /* margin-bottom: 20px; */
+}
+
+.counter-container h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#count-el {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid goldenrod;
+}
+
+#increment-btn {
+  color: #d6e3f0;
+  background: #8a002f;
+}
+
+#save-btn {
+  color: #8a002f;
+  background: #d6e3f0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 20px 0 30px 0;
+}
+
+.reset {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fade-in 3s linear 1;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 620px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .player-name {
+    font-size: 2rem;
+  }
+
+  .counter-container h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  #count-el {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  #total {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .counter-container h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+
+  #count-el {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  #total {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+}
