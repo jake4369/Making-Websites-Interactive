@@ -9,9 +9,8 @@ const uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 const symbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+"];
 
-let password = [];
-
 const generatePassword = () => {
+  let password = [];
   for (let i = 0; i < 4; i++) {
     password.push(
       lowercase[Math.floor(Math.random() * lowercase.length - 1) + 1]
@@ -29,25 +28,23 @@ const generatePassword = () => {
   return password.sort(() => Math.random() - 0.5).join("");
 };
 
+const copyPassword = function (el) {
+  navigator.clipboard.writeText(el.textContent);
+  document.querySelector(".copied").textContent = "Copied to clipboard";
+  setTimeout(() => {
+    document.querySelector(".copied").textContent = "Click password to copy";
+  }, 2000);
+};
+
 btn.addEventListener("click", () => {
   passwordOne.textContent = generatePassword();
-  password = [];
   passwordTwo.textContent = generatePassword();
-  password = [];
 });
 
 passwordOne.addEventListener("click", () => {
-  navigator.clipboard.writeText(passwordOne.textContent);
-  document.querySelector(".copied").textContent = "Copied to clipboard";
-  setTimeout(() => {
-    document.querySelector(".copied").textContent = "Click password to copy";
-  }, 2000);
+  copyPassword(passwordOne);
 });
 
 passwordTwo.addEventListener("click", () => {
-  navigator.clipboard.writeText(passwordTwo.textContent);
-  document.querySelector(".copied").textContent = "Copied to clipboard";
-  setTimeout(() => {
-    document.querySelector(".copied").textContent = "Click password to copy";
-  }, 2000);
+  copyPassword(passwordTwo);
 });
