@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Baskball Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img class="logo lakers-logo" src="images/lakers.png" alt="" />
+        <h3 class="home">HOME</h3>
+        <div class="score-container home-score-container">0</div>
+        <span class="increment-btn" id="home-plus-1" onclick="add1home()"
+          >+1</span
+        >
+        <span class="increment-btn" id="home-plus-2" onclick="add2home()"
+          >+2</span
+        >
+        <span class="increment-btn" id="home-plus-3" onclick="add3home()"
+          >+3</span
+        >
+      </div>
+      <div>
+        <img class="logo bucks-logo" src="images/bucks.png" alt="" />
+        <h3 class="guest">GUEST</h3>
+        <div class="score-container guest-score-container">0</div>
+        <span class="increment-btn" id="guest-plus-1" onclick="add1guest()"
+          >+1</span
+        >
+        <span class="increment-btn" id="guest-plus-2" onclick="add2guest()"
+          >+2</span
+        >
+        <span class="increment-btn" id="guest-plus-3" onclick="add3guest()"
+          >+3</span
+        >
+      </div>
+
+      <img src="images/crypto.png" alt="" class="crypto-logo" />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

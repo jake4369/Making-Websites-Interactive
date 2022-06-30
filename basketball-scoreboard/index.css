@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Cursed Timer";
+  src: url("CursedTimerULiL.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  color: rgb(243, 188, 75);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 675px;
+  height: 485px;
+  background: #502880;
+}
+
+.logo {
+  width: 100px;
+  position: absolute;
+  top: 40px;
+}
+
+.lakers-logo {
+  left: 160px;
+}
+
+.bucks-logo {
+  width: 70px;
+  top: 20px;
+  left: 430px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  width: 149px;
+  text-align: center;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 120px;
+  font-family: "Cursed Timer";
+  font-size: 90px;
+  background: #000;
+  border-radius: 5px;
+}
+
+.home {
+  position: absolute;
+  top: 118px;
+  left: 135px;
+}
+
+.home-score-container {
+  position: absolute;
+  top: 175px;
+  left: 135px;
+}
+
+.guest {
+  position: absolute;
+  top: 118px;
+  left: 390px;
+}
+
+.guest-score-container {
+  position: absolute;
+  top: 175px;
+  left: 387px;
+}
+
+.increment-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-family: "Cursed Timer";
+  font-size: 18px;
+
+  border: 2px solid rgb(243, 188, 75);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#home-plus-1 {
+  position: absolute;
+  top: 321px;
+  left: 132px;
+}
+
+#home-plus-2 {
+  position: absolute;
+  top: 321px;
+  left: 186px;
+}
+
+#home-plus-3 {
+  position: absolute;
+  top: 321px;
+  left: 242px;
+}
+
+#guest-plus-1 {
+  position: absolute;
+  top: 321px;
+  left: 387px;
+}
+
+#guest-plus-2 {
+  position: absolute;
+  top: 321px;
+  left: 441px;
+}
+
+#guest-plus-3 {
+  position: absolute;
+  top: 321px;
+  left: 497px;
+}
+
+.crypto-logo {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 301px;
+  height: 65.79px;
+  background: #fff;
+  padding: 0.5em;
+}
